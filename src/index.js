@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './components/header';
+import Navbar from './components/navbar';
+import Content from './components/content';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+function App() {
+  const [page, setPage] = useState('Home');
+  return (
+    <div>
+      <Header />
+      <Navbar setPage={setPage} />
+      <Content page={page} />
+    </div>
+  );
+}
+
 root.render(
   <React.StrictMode>
-    <Header />
+    <App />
   </React.StrictMode>
 );
 

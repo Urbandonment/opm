@@ -1,13 +1,22 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  background-color: #ca3433;
 }
 
-.logo-header{
-    width: 300px;
+.logo-header {
+  width: 200px;
+}
+
+.navbar-items {
+  display: inline-flex;
+  gap: 50px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 60px;
 }
