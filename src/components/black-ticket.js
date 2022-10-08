@@ -1,5 +1,9 @@
+import React from 'react';
+
 function BlackTicket() {
-  return <h1>Black Ticket Calculation</h1>;
+  return (
+    <h1>Black Ticket Calculation</h1>
+  )
 }
 
 export default BlackTicket;
